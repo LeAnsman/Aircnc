@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Main */
+
+*:focus, *:focus-visible, *:focus-within {
+  outline: transparent;
+}
+
+button,
+button:active,
+button:focus {
+outline: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+/* Change Autcomplete styles  */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(249 250 251) inset;
+  box-shadow: inset 0 0 0 1px rgb(249 250 251), inset 0 0 0 100px rgb(249 250 251);
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+-webkit-box-shadow: 0 0 0px 1000px rgb(249 250 251) inset;;
+box-shadow: inset 0 0 0 1px rgb(249 250 251), inset 0 0 0 100px rgb(249 250 251);
+}
+
+
+/* Toastify  */
+:root{
+  --toastify-icon-color-error : white;
+}
+
+.Toastify__progress-bar {
+  background: linear-gradient(to right,  
+  #f34e6f,
+  #F5385D,
+  #d83757)
+}
+
+.Toastify__toast--error {
+background: #f67a93;
+color: white;
+}
+
+.Toastify__close-button {
+display: none;
+}
+
+/* Swiper */
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  transform: translateY(10px);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255,255,255,0.75);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  transition: all;
+  transition-duration: 400ms;
+  opacity: 0;
+}
+
+.swiper-button-prev {
+  background-image: url("/assets/chevron-left.svg");
+}
+
+.swiper-button-next {
+  background-image: url("/assets/chevron-right.svg");
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background-color: rgba(255,255,255,1);
+}
+
+.card:hover  .swiper-button-next {
+  opacity: 1;
+}
+
+.card:hover  .swiper-button-prev {
+  opacity: 1;
+}
+
+.imgCard:hover .btnCard {
+  opacity: 1;
+}
+
+.PhoneInputInput {
+  background-color: rgb(249 250 251);
+  letter-spacing: 1.6px;
+}
