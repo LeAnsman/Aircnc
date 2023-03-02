@@ -14,3 +14,10 @@ Aircnc is a clone of Airbnb made with React and Node
 - NodeJS
 - Express
 - MongoDB
+
+#### Setup locally
+
+- Clone this repository locally
+- Run npm install in both folders
+- Run npm run dev in both folders
+- Enjoy the website
