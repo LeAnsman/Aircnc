@@ -1,6 +1,6 @@
-# StockZ
+# Aircnc
 
-StockZ is a e-commerce for shoes.
+Aircnc is a clone of Airbnb made with React and Node
 
 ## Aim
 
