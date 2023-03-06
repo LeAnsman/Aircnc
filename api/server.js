@@ -25,8 +25,8 @@ app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 app.use(
   cors({
+    origin: ["https://aircnc-seven.vercel.app", "http://localhost:5173"],
     credentials: true,
-    origin: "http://localhost:5173",
   })
 );
 
