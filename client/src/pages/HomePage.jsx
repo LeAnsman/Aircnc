@@ -28,6 +28,15 @@ export default function HomePage() {
             />
           ))}
       </div>
+      {places.length == 0 && (
+        <div className="flex justify-center items-center h-[75vh] max-w-3xl mx-10 md:mx-auto">
+          <p className="text-2xl">
+            Looks like there is{" "}
+            <span className="text-primary">no connection</span> to the server,
+            <strong> sorry about that</strong>.
+          </p>
+        </div>
+      )}
     </div>
   );
 }
